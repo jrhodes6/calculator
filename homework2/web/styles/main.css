@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 85%;
+    margin: 0 auto;
+    padding-top: 1em;
+    width: 85%;
+    border-color: navy;
+    border-style:solid;
+    border-width: medium;
+    padding-left: 2.5em;   
+}
+
+h1{
+    color: navy;
+    margin-left: ;
+}
+
+label{
+   text-align:right;
+    width:5em;
+    float:left;
+}
+.pad_top{
+    padding-top: .25em;
+    padding-left: ;
+}
+
+input[type=number] {
+  border: 1px solid black;
+  margin-left: .5em;
+  margin-bottom: .2em;
+  width: 20em;
+  
+}
+
+.margin_left{
+    margin-left:6em;
+}
