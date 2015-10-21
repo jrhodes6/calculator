@@ -10,12 +10,15 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>CSC330 Homework 2</title>
+         <link rel ="stylesheet" href ="styles/main.css" type="text/css"/>
     </head>
     <body>
         <h1> Future Value Calculator </h1>
-        <jsp:useBean id="user" scope="request" class= "edu.elon.calculator"/>
+        <jsp:useBean id="user" scope="request" class= "edu.elon.calculator.User"/>
+        
+        
         <label> Investment Amount: </label>
-        <span> <jsp:getProperty name = "user" property= "amount"/></span><br>
+        <span> <jsp:getProperty name = "user" property= "currencyamount"/></span><br>
         <label> Yearly Interest Rate: </label>
         <span> <jsp:getProperty name = "user" property= "rate"/></span><br>
         <label> Number of Years: </label>
@@ -23,9 +26,9 @@
         <label> Future Value: </label>
         
         
-        <span><useBean id="value" scope="request" </span><br>
+         <span> <jsp:getProperty name = "user" property= "currencyfuturevalue"/></span><br>
         
         
-        
+        <%@ include file="/footer.jsp" %>
     </body>
 </html>

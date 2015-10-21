@@ -6,6 +6,7 @@
 package edu.elon.calculator;
 
 import java.io.Serializable;
+import java.text.NumberFormat;
 
 /**
  *
@@ -33,6 +34,11 @@ public class User implements Serializable{
         return amount;
     }
     
+    public String getCurrencyamount(){
+        NumberFormat currency = NumberFormat.getCurrencyInstance();
+        return currency.format(amount);
+    }
+    
     public void setAmount(float amount){
         this.amount = amount;
     }
@@ -52,10 +58,16 @@ public class User implements Serializable{
         this.years = years;
     }
     
-    public double calculateFutureValue(){
-        double futurevalue = amount*Math.pow((1 + rate),years);
+    public double getCalculatefuturevalue(){
+        double futurevalue = amount*Math.pow((1 + rate*.01),years);
         return futurevalue;
 }
+    
+    public String getCurrencyfuturevalue(){
+        double value = amount*Math.pow((1 + rate*.01),years);
+        NumberFormat currency = NumberFormat.getCurrencyInstance();
+        return currency.format(value);
+    }
     
     
 }

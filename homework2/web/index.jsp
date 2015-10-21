@@ -19,21 +19,24 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <div>
         <h1> Future Value Calculator </h1>
-        <form action="emailList" method="post">
+        
+        <form action="CalculatorServlet" method="post">
             <input type="hidden" name="action" value="add">
             <label class="pad_top">Investment Amount</label>
-            <input type="number" name="amount" value="" ><br>
+            <input type="number" name="amount" value="" required autofocus><br>
             <label class="pad_top">Yearly Interest Rate</label>
-            <input type="number" name="rate" value=""><br>
+            <input type="number" name="rate" value="" required><br>
             <label class="pad_top"> Number of Years</label>
-            <input type="number" name="years" value="" placeholder="Integer 
-                   number of years"><br>
-            <input type="submit" value="Calculate" class="margin_left">
+            <input type="number" name="years" value="" placeholder="Integer number of years" required><br>
+            <input type="submit" value="Calculate" class="margin_left" >
         </form>  
-        
+        </div>
       
-        <%@ include file="/footer.jsp" %>
+       
+        
     </body>
+    <%@ include file="/footer.jsp" %>
 </html>
 

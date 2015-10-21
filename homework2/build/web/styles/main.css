@@ -1,28 +1,52 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 85%;
+    font-size: 100%;
     margin: 0 auto;
     padding-top: 1em;
     width: 85%;
     border-color: navy;
     border-style:solid;
-    border-width: medium;
-    padding-left: 2.5em;   
+    border-width: medium;  
+}
+
+form br{
+    clear: both;
+}
+
+form{
+    
+    padding-left: 5em; 
 }
 
 h1{
     color: navy;
-    margin-left: ;
+    
+    padding-left: 2.5em; 
 }
+
+div{
+    width: 63%;
+}
+
+#footer{
+    border-color: navy transparent transparent transparent;
+    border-style:solid ;
+    border-width: medium;
+    padding-bottom: .5em;
+    width:99.8%;
+    padding-left: 0;
+    margin: 0 auto;
+}
+
 
 label{
    text-align:right;
-    width:5em;
-    float:left;
+    width:10em;
+    float: left;
 }
 .pad_top{
     padding-top: .25em;
-    padding-left: ;
+    padding-left: 1em;
 }
 
 input[type=number] {
